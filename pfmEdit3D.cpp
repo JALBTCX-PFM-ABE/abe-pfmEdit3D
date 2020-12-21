@@ -10362,6 +10362,12 @@ pfmEdit3D::slotDisplayManInvalid ()
     }
 
 
+
+  //  If we had highlighting on prior to displaying invalid, redo it.
+
+  if (options.flag_index) setFlags (&misc, &options);
+
+
   //  Always turn auto-scaling on whenever we turn invalid data on or off.  If we're not auto-scaling it will be turned off again after
   //  we redraw the map.
 
@@ -10388,6 +10394,11 @@ pfmEdit3D::slotDisplayFltInvalid ()
     }
 
 
+  //  If we had highlighting on prior to displaying invalid, redo it.
+
+  if (options.flag_index) setFlags (&misc, &options);
+
+
   //  Always turn auto-scaling on whenever we turn invalid data on or off.  If we're not auto-scaling it will be turned off again after
   //  we redraw the map.
 
@@ -10410,6 +10421,11 @@ pfmEdit3D::slotDisplayNull ()
     {
       options.display_null = NVFalse;
     }
+
+
+  //  If we had highlighting on prior to displaying invalid, redo it.
+
+  if (options.flag_index) setFlags (&misc, &options);
 
 
   //  Always turn auto-scaling on whenever we turn invalid data on or off.  If we're not auto-scaling it will be turned off again after

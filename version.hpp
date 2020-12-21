@@ -39,7 +39,7 @@
 
 #ifndef VERSION
 
-#define     VERSION     "PFM Software - pfmEdit3D V6.96 - 08/22/19"
+#define     VERSION     "PFM Software - pfmEdit3D V6.97 - 08/28/19"
 
 #endif
 
@@ -2070,5 +2070,12 @@
 
     - Changed the filters (HP, AVT, area, attr, CZMIL Urban) so that they don't run automatically when you press
       the button.  Changed the 'Apply' button to 'Run' and updated the documentation (i.e. Help).
+
+
+    Version 6.97
+    Jan C. Depner (PFM Software)
+    08/28/19
+
+    - Fixed display of flagged data when turning display of invalid/null data on/off.
 
 </pre>*/

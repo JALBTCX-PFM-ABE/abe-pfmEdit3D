@@ -12,6 +12,9 @@ The PFM ABE suite of tools consists of many individual components that each carr
 
 |App Version|Release Date|ABE Version|Notes|
 |-------|------------|-----|---|
-|V6.96|08/22/19|V7.0.0.0|  |
+|V6.96|08/22/19|V7.0.0.0|JCD - Changed the filters (HP, AVT, area, attr, CZMIL Urban) so that they don't run automatically when you press the button.  Changed the 'Apply' button to 'Run' and updated the documentation (i.e. Help).  |
+|V6.97 |08/28/19|V7.0.0.1|JCD - Fixed display of flagged data when turning display of invalid/null data on/off.|
 
 ## Notes
+
+* Can only be run via pfmEdit using shared memory

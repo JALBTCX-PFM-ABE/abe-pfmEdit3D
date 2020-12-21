@@ -2679,7 +2679,7 @@ The error message returned was:
     </message>
     <message>
         <location filename="pfmEdit3D.cpp" line="2547"/>
-        <location filename="pfmEdit3D.cpp" line="12783"/>
+        <location filename="pfmEdit3D.cpp" line="12799"/>
         <source>HOF Wave Filter</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2731,7 +2731,7 @@ The error message returned was:
     <message>
         <location filename="pfmEdit3D.cpp" line="2748"/>
         <location filename="pfmEdit3D.cpp" line="2825"/>
-        <location filename="pfmEdit3D.cpp" line="10729"/>
+        <location filename="pfmEdit3D.cpp" line="10745"/>
         <source>CPF Filter</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2860,7 +2860,7 @@ The error message returned was:
         <location filename="pfmEdit3D.cpp" line="4498"/>
         <location filename="pfmEdit3D.cpp" line="4499"/>
         <location filename="pfmEdit3D.cpp" line="4500"/>
-        <location filename="pfmEdit3D.cpp" line="11094"/>
+        <location filename="pfmEdit3D.cpp" line="11110"/>
         <source>No attribute selected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2936,22 +2936,22 @@ The error message returned was:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12312"/>
+        <location filename="pfmEdit3D.cpp" line="12328"/>
         <source>Max: %L1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14460"/>
+        <location filename="pfmEdit3D.cpp" line="14476"/>
         <source>This is Date/Time (minutes) at the cursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14473"/>
+        <location filename="pfmEdit3D.cpp" line="14489"/>
         <source> - Click to place this attribute in the first attribute slot on the Status tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14483"/>
+        <location filename="pfmEdit3D.cpp" line="14499"/>
         <source>&lt;br&gt;&lt;br&gt;Click to place this attribute in the first attribute slot on the &lt;b&gt;Status&lt;/b&gt; tab.  Cyan fade indicates the attribute is already on the &lt;b&gt;Status&lt;/b&gt; tab.  Red fade indicates that it is on the &lt;b&gt;Status&lt;/b&gt; tab and that the surface is colored by this attribute.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3038,9 +3038,9 @@ The error message returned was:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11127"/>
-        <location filename="pfmEdit3D.cpp" line="14457"/>
-        <location filename="pfmEdit3D.cpp" line="14525"/>
+        <location filename="pfmEdit3D.cpp" line="11143"/>
+        <location filename="pfmEdit3D.cpp" line="14473"/>
+        <location filename="pfmEdit3D.cpp" line="14541"/>
         <source>Date/Time (minutes)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3851,212 +3851,212 @@ Reason: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10762"/>
+        <location filename="pfmEdit3D.cpp" line="10778"/>
         <source>Change LiDAR Classification</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10824"/>
-        <location filename="pfmEdit3D.cpp" line="10828"/>
-        <location filename="pfmEdit3D.cpp" line="10832"/>
-        <location filename="pfmEdit3D.cpp" line="10836"/>
         <location filename="pfmEdit3D.cpp" line="10840"/>
         <location filename="pfmEdit3D.cpp" line="10844"/>
+        <location filename="pfmEdit3D.cpp" line="10848"/>
+        <location filename="pfmEdit3D.cpp" line="10852"/>
+        <location filename="pfmEdit3D.cpp" line="10856"/>
+        <location filename="pfmEdit3D.cpp" line="10860"/>
         <source>pfmEdit3D unload process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10824"/>
+        <location filename="pfmEdit3D.cpp" line="10840"/>
         <source>Unable to start the unload process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10828"/>
+        <location filename="pfmEdit3D.cpp" line="10844"/>
         <source>The unload process crashed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10832"/>
+        <location filename="pfmEdit3D.cpp" line="10848"/>
         <source>The unload process timed out!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10836"/>
+        <location filename="pfmEdit3D.cpp" line="10852"/>
         <source>There was a write error to the unload process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10840"/>
+        <location filename="pfmEdit3D.cpp" line="10856"/>
         <source>There was a read error from the unload process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10844"/>
+        <location filename="pfmEdit3D.cpp" line="10860"/>
         <source>The unload process died with an unknown error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10862"/>
+        <location filename="pfmEdit3D.cpp" line="10878"/>
         <source>Unload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10862"/>
+        <location filename="pfmEdit3D.cpp" line="10878"/>
         <source>An error occurred during unload, some or all of your edits were not saved!
 Please run pfm_unload separately to see what the error condition was.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10927"/>
+        <location filename="pfmEdit3D.cpp" line="10943"/>
         <source>Resetting modified flags for %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10994"/>
+        <location filename="pfmEdit3D.cpp" line="11010"/>
         <source>Reading PFM data from %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="10998"/>
+        <location filename="pfmEdit3D.cpp" line="11014"/>
         <source>Unloading</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11081"/>
-        <location filename="pfmEdit3D.cpp" line="11109"/>
+        <location filename="pfmEdit3D.cpp" line="11097"/>
+        <location filename="pfmEdit3D.cpp" line="11125"/>
         <source>pfmView</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11081"/>
+        <location filename="pfmEdit3D.cpp" line="11097"/>
         <source>You cannot unselect the attribute that is being used for the color scale.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11109"/>
+        <location filename="pfmEdit3D.cpp" line="11125"/>
         <source>All attributes on the Status tab are already assigned.
 You must unselect one or more of the selected attributes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11131"/>
-        <location filename="pfmEdit3D.cpp" line="11132"/>
+        <location filename="pfmEdit3D.cpp" line="11147"/>
+        <location filename="pfmEdit3D.cpp" line="11148"/>
         <source> - To change, select attribute on Attributes tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11133"/>
-        <location filename="pfmEdit3D.cpp" line="14469"/>
+        <location filename="pfmEdit3D.cpp" line="11149"/>
+        <location filename="pfmEdit3D.cpp" line="14485"/>
         <source>This is the value of %1 at the cursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11530"/>
         <location filename="pfmEdit3D.cpp" line="11546"/>
+        <location filename="pfmEdit3D.cpp" line="11562"/>
         <source>pfmEdit3D User Guide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11530"/>
+        <location filename="pfmEdit3D.cpp" line="11546"/>
         <source>The PFM_ABE environment variable is not set.
 This must point to the folder that contains the bin folder containing the PFM_ABE programs.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11546"/>
+        <location filename="pfmEdit3D.cpp" line="11562"/>
         <source>Can&apos;t find the Area Based Editor documentation file: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11647"/>
-        <location filename="pfmEdit3D.cpp" line="11652"/>
-        <location filename="pfmEdit3D.cpp" line="11659"/>
-        <location filename="pfmEdit3D.cpp" line="11667"/>
+        <location filename="pfmEdit3D.cpp" line="11663"/>
+        <location filename="pfmEdit3D.cpp" line="11668"/>
+        <location filename="pfmEdit3D.cpp" line="11675"/>
+        <location filename="pfmEdit3D.cpp" line="11683"/>
         <source>0 points selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11784"/>
-        <location filename="pfmEdit3D.cpp" line="11797"/>
-        <location filename="pfmEdit3D.cpp" line="11812"/>
-        <location filename="pfmEdit3D.cpp" line="11829"/>
-        <location filename="pfmEdit3D.cpp" line="12445"/>
-        <location filename="pfmEdit3D.cpp" line="13000"/>
-        <location filename="pfmEdit3D.cpp" line="13151"/>
+        <location filename="pfmEdit3D.cpp" line="11800"/>
+        <location filename="pfmEdit3D.cpp" line="11813"/>
+        <location filename="pfmEdit3D.cpp" line="11828"/>
+        <location filename="pfmEdit3D.cpp" line="11845"/>
+        <location filename="pfmEdit3D.cpp" line="12461"/>
+        <location filename="pfmEdit3D.cpp" line="13016"/>
+        <location filename="pfmEdit3D.cpp" line="13167"/>
         <source>1 point selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="11788"/>
-        <location filename="pfmEdit3D.cpp" line="11801"/>
-        <location filename="pfmEdit3D.cpp" line="11816"/>
-        <location filename="pfmEdit3D.cpp" line="11833"/>
-        <location filename="pfmEdit3D.cpp" line="12449"/>
-        <location filename="pfmEdit3D.cpp" line="13004"/>
-        <location filename="pfmEdit3D.cpp" line="13155"/>
+        <location filename="pfmEdit3D.cpp" line="11804"/>
+        <location filename="pfmEdit3D.cpp" line="11817"/>
+        <location filename="pfmEdit3D.cpp" line="11832"/>
+        <location filename="pfmEdit3D.cpp" line="11849"/>
+        <location filename="pfmEdit3D.cpp" line="12465"/>
+        <location filename="pfmEdit3D.cpp" line="13020"/>
+        <location filename="pfmEdit3D.cpp" line="13171"/>
         <source>%1 points selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12240"/>
+        <location filename="pfmEdit3D.cpp" line="12256"/>
         <source>Line number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12245"/>
+        <location filename="pfmEdit3D.cpp" line="12261"/>
         <source>Horizontal error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12250"/>
+        <location filename="pfmEdit3D.cpp" line="12266"/>
         <source>Vertical error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12311"/>
+        <location filename="pfmEdit3D.cpp" line="12327"/>
         <source>Min: %L1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12344"/>
-        <location filename="pfmEdit3D.cpp" line="12403"/>
-        <location filename="pfmEdit3D.cpp" line="12484"/>
+        <location filename="pfmEdit3D.cpp" line="12360"/>
+        <location filename="pfmEdit3D.cpp" line="12419"/>
+        <location filename="pfmEdit3D.cpp" line="12500"/>
         <source>pfmEdit3D Attribute Filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12345"/>
-        <location filename="pfmEdit3D.cpp" line="12485"/>
+        <location filename="pfmEdit3D.cpp" line="12361"/>
+        <location filename="pfmEdit3D.cpp" line="12501"/>
         <source>Invalid character %1 in attribute filter range text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="12404"/>
+        <location filename="pfmEdit3D.cpp" line="12420"/>
         <source>Range minimum %1 greater than range maximum %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="13216"/>
+        <location filename="pfmEdit3D.cpp" line="13232"/>
         <source>To: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14091"/>
+        <location filename="pfmEdit3D.cpp" line="14107"/>
         <source>Z value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14095"/>
+        <location filename="pfmEdit3D.cpp" line="14111"/>
         <source>Line</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14099"/>
+        <location filename="pfmEdit3D.cpp" line="14115"/>
         <source>Horizontal uncertainty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmEdit3D.cpp" line="14103"/>
+        <location filename="pfmEdit3D.cpp" line="14119"/>
         <source>Vertical uncertainty</source>
         <translation type="unfinished"></translation>
     </message>
