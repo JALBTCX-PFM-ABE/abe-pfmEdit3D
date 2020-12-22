@@ -60,7 +60,7 @@ build: .build-post
 .build-post: .build-impl
 # Add your post 'build' code here...
 	cp dist/Release/QT4.8.6_PFM-Windows/*.exe ../../../compile/bin/.
-	cp dist/Release/QT4.8.6_PFM-Windows/*.exe executables/windows10/.
+
 # clean
 clean: .clean-post
 
