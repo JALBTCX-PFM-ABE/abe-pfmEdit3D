@@ -546,7 +546,15 @@ pfmEdit3D::pfmEdit3D (int *argc, char **argv, QWidget *parent):
   exitGrp->addButton (bExitMask, 1);
   bExitMask->setWhatsThis (exitMaskText);
   toolBar[0]->addWidget (bExitMask);
-
+  
+  bSaveNoExit = new QToolButton (this);
+  misc.button[SAVE_NO_EXIT_KEY] = bSaveNoExit;
+  bSaveNoExit->setIcon (misc.buttonIcon[SAVE_NO_EXIT_KEY]);
+  exitGrp->addButton (bSaveNoExit, 3);
+  bSaveNoExit->setWhatsThis (saveNoExitText);
+  toolBar[0]->addWidget (bSaveNoExit);
+  
+  
   bExitNoSave = new QToolButton (this);
   misc.button[NO_SAVE_EXIT_KEY] = bExitNoSave;
   bExitNoSave->setIcon (misc.buttonIcon[NO_SAVE_EXIT_KEY]);
@@ -3768,6 +3776,10 @@ pfmEdit3D::pfmEdit3D (int *argc, char **argv, QWidget *parent):
   saveExitAction->setStatusTip (tr ("Save changes and exit"));
   connect (saveExitAction, SIGNAL (triggered ()), this, SLOT (slotExitSave ()));
 
+  saveNoExitAction = new QAction (tr ("Save no Exit"), this);
+  saveNoExitAction->setStatusTip (tr("Save changes no exit"));
+  connect (saveNoExitAction, SIGNAL (triggered ()), this, SLOT (slotSaveNoExit ()));
+  
   maskExitAction = new QAction (tr ("Save, Exit, and Mask"), this);
   maskExitAction->setStatusTip (tr ("Save changes, exit, and filter mask in pfmView"));
   connect (maskExitAction, SIGNAL (triggered ()), this, SLOT (slotExitMask ()));
@@ -3779,6 +3791,7 @@ pfmEdit3D::pfmEdit3D (int *argc, char **argv, QWidget *parent):
 
   QMenu *fileMenu = menuBar ()->addMenu (tr ("File"));
   fileMenu->addAction (saveExitAction);
+  fileMenu->addAction (saveNoExitAction);
   fileMenu->addAction (maskExitAction);
   fileMenu->addAction (noSaveExitAction);
 
@@ -4018,6 +4031,7 @@ pfmEdit3D::setWidgetStates (uint8_t enable)
     }
 
 
+  bSaveNoExit->setEnabled(enable);
   bExitNoSave->setEnabled (enable);
   bReset->setEnabled (enable);
 
@@ -4076,16 +4090,20 @@ pfmEdit3D::setWidgetStates (uint8_t enable)
   if (!misc.abe_share->read_only)
     {
       bExitSave->setEnabled (enable);
+      bSaveNoExit->setEnabled (enable);
       bExitMask->setEnabled (enable);
       saveExitAction->setEnabled (enable);
+      saveNoExitAction->setEnabled (enable);
       maskExitAction->setEnabled (enable);
       bUnload->setEnabled (enable);
     }
   else
     {
       bExitSave->setEnabled (false);
+      bSaveNoExit->setEnabled(false);
       bExitMask->setEnabled (false);
       saveExitAction->setEnabled (false);
+      saveNoExitAction->setEnabled (false);
       maskExitAction->setEnabled (false);
       bUnload->setEnabled (false);
     }
@@ -8330,7 +8348,8 @@ pfmEdit3D::redrawMap (uint8_t redraw2D)
 
       //  Check for display invalid and flag invalid
 
-      if (options.flag_index == PFM_USER_FLAGS && (options.display_man_invalid || options.display_flt_invalid)) setFlags (&misc, &options);
+//      if (options.flag_index == PFM_USER_FLAGS && (options.display_man_invalid || options.display_flt_invalid)) setFlags (&misc, &options);
+         if (options.flag_index == 5 && (options.display_man_invalid || options.display_flt_invalid)) setFlags (&misc, &options);
 
 
       //  Use the normal color array or the line color array.
@@ -9767,6 +9786,45 @@ pfmEdit3D::slotExitMask ()
   slotExit (1);
 }
 
+void 
+pfmEdit3D::slotSaveNoExit ()
+{
+   
+    
+      int32_t put_ret = put_buffer (&misc);
+
+      if (misc.feature_mod || put_ret || misc.filtered || misc.czmilReprocessFlag)
+        {
+          if (put_ret && (options.auto_unload || force_auto_unload))
+            {
+              fprintf (stdout, "Edit return status:%d,%d\n", moveWindow + 1, misc.filtered);
+              fflush (stdout);
+	      finishing = NVTrue;
+              autoUnload ();
+            }
+          else
+            {
+              if (put_ret || misc.filtered)
+                {
+                  fprintf (stdout, "Edit return status:%d,%d\n", moveWindow + 1, misc.filtered);
+                }
+              else 
+                {
+                  fprintf (stdout, "Edit return status:%d,%d\n", moveWindow + 2, misc.filtered);
+                }
+              fflush (stdout);
+            }
+        }
+      else
+        {
+          fprintf (stdout, "Edit return status:%d,0\n", moveWindow + 0);
+          fflush (stdout);
+        }
+      
+      QMessageBox msgBox;
+      msgBox.setText("Data has been saved.");
+      msgBox.exec();
+}
 
 
 void 
@@ -9780,6 +9838,13 @@ pfmEdit3D::slotExitNoSave ()
 void 
 pfmEdit3D::slotExit (int id)
 {
+    
+  // if id == 3 then the saveNoExit button was pressed.  
+  if (id == 3) {
+      slotSaveNoExit();
+      return;
+  }  
+    
   qApp->setOverrideCursor (Qt::WaitCursor);
   qApp->processEvents ();
 
@@ -9878,7 +9943,7 @@ pfmEdit3D::slotExit (int id)
     {
       //  Normal exit and save.
 
-    case 0:
+    case 0: // SAVE and EXIT
       map->setCursor (Qt::WaitCursor);
 
       put_ret = put_buffer (&misc);
@@ -9889,7 +9954,7 @@ pfmEdit3D::slotExit (int id)
             {
               fprintf (stdout, "Edit return status:%d,%d\n", moveWindow + 1, misc.filtered);
               fflush (stdout);
-              finishing = NVTrue;
+	      finishing = NVTrue;
               autoUnload ();
             }
           else

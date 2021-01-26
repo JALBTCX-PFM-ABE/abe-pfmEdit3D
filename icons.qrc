@@ -48,6 +48,7 @@
         <file>icons/addfeature.png</file>
         <file>icons/exit_save.png</file>
         <file>icons/exit_mask.png</file>
+	<file>icons/save_no_exit.png</file>
         <file>icons/unload.png</file>
         <file>icons/prefs.png</file>
         <file>icons/restore_poly_cursor.png</file>

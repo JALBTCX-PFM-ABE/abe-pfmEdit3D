@@ -7,6 +7,8 @@
 /nbproject
 /debug
 /release
+*.stackdump
+*.tmp
 
 ### C++ ###
 # Prerequisites

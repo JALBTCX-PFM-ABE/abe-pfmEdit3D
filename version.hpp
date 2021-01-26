@@ -39,7 +39,7 @@
 
 #ifndef VERSION
 
-#define     VERSION     "PFM Software - pfmEdit3D V6.97 - 08/28/19"
+#define     VERSION     "PFM Software - pfmEdit3D V6.98 - 01/25/21"
 
 #endif
 
@@ -2077,5 +2077,11 @@
     08/28/19
 
     - Fixed display of flagged data when turning display of invalid/null data on/off.
+ 
+  Version 6.98
+  Russ R. Johnson (OptimalGEO)
+  01/25/21
+  
+  - Added Save without Exit (SHOM Request #11 from 05/29/20 request document) 
 
 </pre>*/

@@ -226,10 +226,10 @@ class pfmEdit3D:public QMainWindow
 
   QActionGroup    *flagGrp, *hideGrp;
 
-  QAction         *bHelp, *popup[NUMPOPUPS], *popupHelp, *saveExitAction, *maskExitAction, *flag[PFM_USER_FLAGS + PRE_USER],
+  QAction         *bHelp, *popup[NUMPOPUPS], *popupHelp, *saveExitAction, *saveNoExitAction, *maskExitAction, *flag[PFM_USER_FLAGS + PRE_USER],
                   *hideAct[PFM_USER_FLAGS + PFM_DATA_TYPES], *displayFeature[4], *messageAction;
 
-  QToolButton     *bExitSave, *bExitMask, *bExitNoSave, *bReset, *bLevel, *bNorthUp, *bDisplayFeature, *bDisplayChildren, *bDisplayFeatureInfo,
+  QToolButton     *bExitSave, *bExitMask, *bExitNoSave, *bSaveNoExit, *bReset, *bLevel, *bNorthUp, *bDisplayFeature, *bDisplayChildren, *bDisplayFeatureInfo,
                   *bVerifyFeatures, *bDisplayReference, *bMeasure, *bDisplayManInvalid, *bDisplayFltInvalid, *bDisplayNull, *bDisplayAll,
                   *bDisplayMultiple, *bUndisplaySingle, *bUnload, *bPrefs, *bStop, *bDeletePoint, *bDeleteRect, *bDeletePoly, *bKeepPoly,
                   *bRestoreRect, *bRestorePoly, *bUndo, *bReferencePoly, *bUnreferencePoly, *bAddFeature, *bEditFeature, *bDeleteFeature,
@@ -350,6 +350,7 @@ protected slots:
   void slotBlinkTimer ();
 
   void slotExitSave ();
+  void slotSaveNoExit();
   void slotExitMask ();
   void slotExitNoSave ();
   void slotExit (int id);

@@ -178,6 +178,7 @@ void set_defaults (MISC *misc, OPTIONS *options, uint8_t restore)
       //  Tooltip text for the buttons and actions that have editable accelerators
 
       misc->buttonText[SAVE_EXIT_KEY] = pfmEdit3D::tr ("Save changes and exit");
+      misc->buttonText[SAVE_NO_EXIT_KEY] = pfmEdit3D::tr ("Save no exit");
       misc->buttonText[SAVE_EXIT_MASK_KEY] = pfmEdit3D::tr ("Save changes, exit, and filter mask in pfmView");
       misc->buttonText[NO_SAVE_EXIT_KEY] = pfmEdit3D::tr ("Exit without saving changes");
       misc->buttonText[RESET_KEY] = pfmEdit3D::tr ("Reset to original view");
@@ -211,6 +212,7 @@ void set_defaults (MISC *misc, OPTIONS *options, uint8_t restore)
       //  Icons for the buttons and actions that have editable accelerators
 
       misc->buttonIcon[SAVE_EXIT_KEY] = QIcon (":/icons/exit_save.png");
+      misc->buttonIcon[SAVE_NO_EXIT_KEY] = QIcon (":/icons/save_no_exit.png");
       misc->buttonIcon[SAVE_EXIT_MASK_KEY] = QIcon (":/icons/exit_mask.png");
       misc->buttonIcon[NO_SAVE_EXIT_KEY] = QIcon (":/icons/exit_no_save.png");
       misc->buttonIcon[RESET_KEY] = QIcon (":/icons/reset_view.png");
@@ -901,7 +903,9 @@ void set_defaults (MISC *misc, OPTIONS *options, uint8_t restore)
     }
 
 
-  options->buttonAccel[SAVE_EXIT_KEY] = "Ctrl+s";
+  options->buttonAccel[SAVE_EXIT_KEY] = "Alt+s";
+  options->buttonAccel[SAVE_NO_EXIT_KEY] = "Ctrl+s";
+
   options->buttonAccel[SAVE_EXIT_MASK_KEY] = "Ctrl+f";
   options->buttonAccel[NO_SAVE_EXIT_KEY] = "Ctrl+q";
   options->buttonAccel[RESET_KEY] = "Ctrl+r";
@@ -909,7 +913,7 @@ void set_defaults (MISC *misc, OPTIONS *options, uint8_t restore)
   options->buttonAccel[DELETE_RECTANGLE_MODE_KEY] = "F4";
   options->buttonAccel[DELETE_POLYGON_MODE_KEY] = "F5";
   options->buttonAccel[AREA_FILTER_KEY] = "Alt+a";
-  options->buttonAccel[STAT_FILTER_KEY] = "Alt+s";
+  options->buttonAccel[STAT_FILTER_KEY] = "Ctrl+Alt+s";
   options->buttonAccel[HP_FILTER_KEY] = "F6";
   options->buttonAccel[ATTR_FILTER_KEY] = "Ctrl+a";
   options->buttonAccel[CZMIL_URBAN_FILTER_KEY] = "Ctrl+u";

@@ -43,9 +43,13 @@ QString exitMaskText =
   pfmEdit3D::tr ("<img source=\":/icons/exit_mask.png\"> Click this button to save changes to the PFM structure and "
                  "then exit from the editor.  In addition, the area that was edited will be marked as a filter "
                  "masked area in pfmView.");
+QString saveNoExitText = 
+  pfmEdit3D::tr ("<img source=\":/icons/save_no_exit.png\"> Click this button to save changes but NOT exit from the editor");
+
 QString exitNoSaveText = 
   pfmEdit3D::tr ("<img source=\":/icons/exit_no_save.png\"> Click this button to discard changes and then exit from "
                  "the editor.");
+
 QString resetText = 
   pfmEdit3D::tr ("<img source=\":/icons/reset_view.png\"> Click this button to reset to the original scale and view.");
 

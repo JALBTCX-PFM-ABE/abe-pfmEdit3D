@@ -204,9 +204,8 @@
 #define         SET_VIEW_LEVEL_KEY                26
 #define         CHANGE_LIDAR_CLASS_KEY            27
 #define         SET_NORTH_UP_KEY                  28
-
-
-#define         HOTKEYS                           29
+#define         SAVE_NO_EXIT_KEY                  29
+#define         HOTKEYS                           30
 
 
 //!<  Hard-wired hot keys
